@@ -1,0 +1,22 @@
+{
+  "name": "@root/server-express",
+  "version": "0.0.1",
+  "main": "express-csv.js",
+  "private": true,
+  "dependencies": {
+    "body-parser": "1.19.0",
+    "cookie-parser": "1.4.5",
+    "cors": "2.8.5",
+    "express": "4.17.1",
+    "helmet": "4.4.1",
+    "http-errors": "1.8.0",
+    "jsonwebtoken": "8.5.1"
+},
+  "scripts": {
+    "dev_express_csv": "nodemon -r esm ./express-csv.js",
+    "dev_express_csv_prod": "NODE_ENV=production node ./_build/express-csv_BUNDLE.js"
+  },
+  "engines": {
+    "node": "15.x"
+  }
+}
